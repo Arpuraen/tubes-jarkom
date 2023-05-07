@@ -1,5 +1,5 @@
-from socket import *
-import sys
+from socket import *  # mengimport modul socket
+import sys  # mengimport modul sys
 
 # membuat tcp soket
 serverSocket = socket(AF_INET, SOCK_STREAM)
