@@ -1,8 +1,8 @@
-from socket import *
-import sys
+from socket import *    # mengimport modul socket
+import sys  # mengimport modul sys
 
 # membuat tcp soket
-serverSocket = socket(AF_INET, SOCK_STREAM)
+serverSocket = socket(AF_INET, SOCK_STREAM) # membuat soket TCP dengan nama variabel 'serverSocket'
 serverPort = 8080 # nomor port
 serverSocket.bind(('',serverPort)) # mengikat port ke soket
 serverSocket.listen(1) #menunggu request
@@ -53,5 +53,5 @@ while True:
         connectionSocket.close()
 
     # tutup aplikasi
-    serverSocket.close()
-    sys.exit()
+    serverSocket.close()    # menutup koneksi soket serverSocket
+    sys.exit()  # keluar dari program menggunakan perintah exit()
